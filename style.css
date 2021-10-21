@@ -1,0 +1,151 @@
+body,
+h1,
+ul {
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", sans-serif;
+}
+
+body {
+  padding: 20px;
+}
+
+/* Header */
+
+ul {
+  list-style: none;
+}
+
+.nav-list {
+  color: #69696a;
+  font-size: 9pt;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1 {
+  font-size: 10pt;
+}
+
+/* Black Anchors */
+
+.hire-us,
+.call-to-action {
+  background-color: black;
+  color: white;
+  border-radius: 30px;
+  width: 100%;
+  display: inline-block;
+  text-align: center;
+  padding: 10pt;
+  padding: 5px;
+}
+
+.hire-us {
+  margin-top: 7px;
+}
+
+/* About */
+
+.about {
+  border-left: solid 3px #69696a;
+  color: #69696a;
+  font-size: 9pt;
+  padding-left: 10pt;
+}
+
+/* Footer */
+
+.footer {
+  position: fixed;
+  display: flex;
+  background-color: rgba(247, 193, 162, 0.7);
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  justify-content: space-between;
+  align-items: center;
+  height: 40px;
+}
+
+.footer-links {
+  display: flex;
+  padding-bottom: 4px;
+}
+
+.footer-links a {
+  color: #69696a;
+  padding: 10px;
+  font-size: 12px;
+}
+
+.foot-header {
+  padding-left: 10px;
+  padding-bottom: 4px;
+
+  font-size: 12px;
+}
+
+/* Media Query / Desktop View */
+
+@media only screen and (min-width: 768px) {
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .navigation {
+    display: flex;
+    align-items: center;
+  }
+
+  .nav-list {
+    padding: 10px;
+  }
+
+  .main-container {
+    display: flex;
+    /* position: absolute; */
+  }
+
+  .circle {
+    border-radius: 50%;
+    position: absolute;
+  }
+
+  .large {
+    background-color: rgba(247, 136, 167, 0.6);
+    width: 200px;
+    height: 200px;
+    right: 50px;
+    top: 50px;
+  }
+
+  .medium {
+    background-color: rgba(247, 193, 162, 0.7);
+    width: 150px;
+    height: 150px;
+    right: 0;
+    top: 160px;
+  }
+
+  .small {
+    background-color: rgba(207, 130, 213, 0.6);
+    width: 100px;
+    height: 100px;
+    right: 5px;
+    top: 100px;
+  }
+
+  .circles-container {
+    flex: 1;
+    position: relative;
+  }
+
+  .text-container {
+    flex: 1;
+  }
+}
